@@ -1,0 +1,169 @@
+% Corey Biz CV in LaTeX
+%
+% Loosely Based on the Jason Blevins Template
+% http://jblevins.org/projects/cv-template/
+%
+
+%Setup Stuff
+\documentclass[letter]{article}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{bibentry}
+\usepackage{titlesec}
+\usepackage{sectsty}
+
+%Headers
+\usepackage{fancyhdr}
+ \pagestyle{fancy}
+  \rhead{M. Corey CV}
+  \lhead{michael.corey@gmail.com}
+  
+%Fonts
+\usepackage{palatino}
+%\usepackage{inconsolata}
+%\allsectionsfont{\sffamily}{palatino} % <---- omitting \bfseries still gives bold font
+%\sectionfont{\fontfamily{ \large}}
+%\renewcommand{\rmdefault}{palatino}	%<----- Set default font to palatino
+
+%Define Names, etc
+\def\name{Michael R. Corey}
+\def\footerlink{http://home.uchicago.edu/~mcorey}
+\def\UofC{University Of Chicago}
+\def\sp{-8pt}             %Remove spacing for some lines
+\def\ind{10pt}	         %Set indent
+\def\gap{\vspace{12pt}}    %Gap between activities in experience
+
+%Defining the Tabular sections
+\usepackage{array, xcolor}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{darkgray}\vrule width 0.5pt}
+\renewcommand{\arraystretch}{1.2} %Defining the spacing between lines
+
+\newcolumntype{Q}{>{\raggedright\arraybackslash}p{0.33\textwidth}}
+
+
+%setup the hyperlinks
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {sociology, time use, family, work},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+ 
+\title{\huge \textbf{Michael R. Corey} \\ \large \textbf{Social \& Data Scientist}}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-4em}
+
+\begin{minipage}[ht]{0.58\textwidth}
+	 Email: michael.corey@gmail.com\\ Cell: 773.322.3706\\ 
+\end{minipage}
+\begin{minipage}[ht] {0.40\textwidth}
+	 Web: www.mrcorey.com\\  Github: www.github.com/mcorey \end{minipage}
+
+%Introduction
+\section*{Introduction}
+I am a data scientist and applied statistician trained in the social sciences. For the last seven years, I have worked on statistical modeling of attitudes and behaviors at the individual, group, and population levels. My specialty is analyzing how behaviors vary based on physical location, time of day, and day of the week. I am actively looking for a new challenge exploring how individuals connect with technology and each other. My academic and professional training is directly applicable to roles in data science, user research, and product analysis.
+
+%Education Section
+\section*{Education}
+	\begin{tabular}{L!{\VRule}R}
+		2007--2013&PhD Candidate in Sociology, University of Chicago\\ 
+		&\hspace{6pt} -- Dissertation: \emph{The Sociology of Scheduling}\\
+		&\hspace{6pt} -- Associate Editor, \emph{American Journal of Sociology} (2011-12)\\
+		&\hspace{6pt} -- MA Paper: \hangindent=19pt ``Unsocial Work Hours, Stratification, 
+			and the Shifting Landscape \newline of Industry'' (2009)\\
+		2006--2007&MSc in Sociology, University of Oxford (St. Hugh's College) \\
+		&\hspace{6pt} -- MSc Paper: \hangindent=19pt ``Effects of Paid Work Timing on the Division of Labor in British Households.'' \\
+		2005--2006&Post-Graduate Diploma in Sociology, London School of
+			Economics\\
+		&\hspace{6pt} -- Degree awarded \textit{with Merit} \\
+		1999--2003&BS in Planned Studies (Audio Technology), Ithaca College\\
+		&\hspace{6pt} -- Degree awarded \textit{Magna Cum Laude}\vspace{\sp}
+	\end{tabular}
+	
+\section*{Skills \& Technologies}
+	\begin{tabular}{L!{\VRule}R}
+	  Programming&R (TraMineR, ggplot2, hclust, glm), STATA, Python (NumPy, Scikit-Learn, Pandas)\\
+	  Methods&Regression, Sequence Analysis, Machine Learning, Clustering, Network Analysis\\
+	  Miscellaneous&OS X, Linux, Unix, LaTeX, OpenOffice, HTML, Show Control, Zotero\\
+	  \end{tabular}
+
+\section*{Data Analysis \& Programming Experience}
+  \hspace{14pt} Doctoral Research in Sociology, University of Chicago\\
+	\begin{tabular}{L!{\VRule}R}
+		2007--2013&Analyzed 9 years of time diaries from the American Time Use Survey (ATUS)\\
+		&Performed sequence analysis on 2.4 million activities across 100,000 respondents\\
+		&Used clustering, inferential statistics, and multivariate regression to test hypotheses\\
+		&Awarded Poster Prize at 2011 meetings of the Population Association of America\\
+	\end{tabular} \gap
+    
+  Adjunct Lecturer in Statistics, DePaul University\\
+	\begin{tabular}{L!{\VRule}R}
+		2009--2013&Taught statistics for social science to undergraduates\\
+		&Focused on data analysis and management using SPSS\\
+		&Course included probability, descriptive statistics, visualization, and regression\\
+	\end{tabular} \gap
+
+  Data Analyst, Center for Human Potential and Public Policy\\
+    \begin{tabular}{L!{\VRule}R}
+      2008-2011& Lead analysis using longitudinal and cross sectional data\\
+        &Analyzed and mined cross-sectional and longitudinal data on parenting\\
+        &Collaborated in an interdisciplinary environment\\
+        &Wrote, edited, presented, and published papers\\
+    \end{tabular} \gap
+        
+    Research Assistant, National Social Life, Health, and Aging Project, NORC at the University of Chicago\\
+   \begin{tabular}{L!{\VRule}R}
+      2008-2011& Analyzed non-response rates to different survey instruments\\
+        & Collaborated on design of attitudinal and behavior questions\\
+        & Provided statistical consulting to project members\\
+        & Designed data-cleaning scripts to speed pre-test analyses\\
+   \end{tabular} \gap 
+         
+ 
+  Research Assistant, Center for Time Use Research, St. Hugh's College, Oxford\\
+   \begin{tabular}{L!{\VRule}R}
+        2007&Analyzed time diary data to produce population level estimates\\
+            &Presented work on behalf of the center\\
+            &Contributed to the development of the Multinational Time Use Survey (MTUS)\\
+    \end{tabular} \gap 
+
+  Technical Sales, Autograph A2D, New York, NY \& London, UK\\
+   \begin{tabular}{L!{\VRule}R}
+        2004-2006&Was sole American employee providing support for new sound console launch\\
+            &Taught classes and provided instruction in scripting for proprietary software\\
+            &Programmed and synchronized consoles with other theatrical systems\\
+            &Performed board level repairs on equipment\\
+            &Interfaced with technicians from manufacturing company and home office\\
+            &Worked at the home shop in London, UK (2006)\\
+    \end{tabular} \gap 
+    
+  Show Control Intern, Granite Precision Inc, Pine Mountain, CA\\
+   \begin{tabular}{L!{\VRule}R}
+       2002-2002&Programmed using proprietary scripting language to synchronize live entertainment\\
+       &Helped develop and test next generation show control systems\\
+       &Produced website design for Granite Precision and affiliated companies\\
+       &Provided audio support for product and associated company activities\\
+   \end{tabular}
+        
+\section*{Selected Peer Reviewed Publications \& Presentations}
+	\begin{tabular}{L!{\VRule}R}
+		2012&\hangindent=13pt Kalil, Ariel, Rebecca M. Ryan, Michael R. Corey.  			``Diverging Destinies: Maternal \newline Education and the 			Development Gradient in Time With Children.'' 			\emph{Demography}, 49(4), pp. 1361-1383.\\
+		2012&\hangindent=13pt Corey, Michael R. ``Working 9-5? Lucky You!: New Measures for 
+		Evening Work.'' Presentation, American Sociological Association Meetings\\
+		2011&\hangindent=13pt Corey, Michael R. ``The Shift is Dying but Evening Work is Thriving: 
+				Primetime Work and the Work-Life Balance.'' 
+				Poster, Population Association of America Meetings\\
+		\end{tabular}
+
+\end{document}
+
+
